@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | ธนวัฒน์ ใจวังเย็น</title>
+
+<style>
+:root{
+    --primary:#16160c;
+    --secondary:#fcf815;
+    --bg:#f5ff6e;
+    --card:#e0fdb0;
+    --text:#000000;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:"Segoe UI", Tahoma, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* ===== Navbar ===== */
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(6px);
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+nav ul{
+    margin:0;
+    padding:10px;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+nav ul li{
+    margin:5px 12px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+}
+nav ul li a:hover{
+    text-decoration:underline;
+}
+
+/* ===== Header ===== */
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+header h1{
+    font-size:2.6rem;
+    margin-bottom:10px;
+}
+header p{
+    font-size:1.2rem;
+    opacity:0.95;
+}
+
+/* ===== Section ===== */
+section{
+    max-width:1000px;
+    margin:40px auto;
+    padding:40px;
+    background:var(--card);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+h2{
+    color:var(--primary);
+    margin-bottom:25px;
+    position:relative;
+}
+h2::after{
+    content:"";
+    width:60px;
+    height:4px;
+    background:var(--secondary);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    border-radius:5px;
+}
+
+/* ===== Table ===== */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+th,td{
+    padding:14px;
+    border-bottom:1px solid #ddd;
+}
+th{
+    background:#f3e5f5;
+    color:var(--primary);
+}
+tr:hover{
+    background:#faf5fc;
+}
+
+/* ===== Card ===== */
+.card{
+    background:#faf7fb;
+    padding:25px;
+    border-radius:14px;
+    margin-bottom:20px;
+    border-left:6px solid var(--secondary);
+}
+
+/* ===== Footer ===== */
+footer{
+    text-align:center;
+    padding:30px 20px;
+    color:white;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    margin-top:60px;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+    section{
+        padding:25px;
+        margin:25px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#profile">ประวัติ</a></li>
+        <li><a href="#skills">ทักษะ</a></li>
+        <li><a href="#projects">โครงงาน</a></li>
+        <li><a href="#training">อบรม</a></li>
+        <li><a href="#goal">แรงบันดาลใจ</a></li>
+    </ul>
+</nav>
+
+<header>
+    <img src="BSS.jpg" alt="รูปโปรไฟล์" class="profile-img">
+    <h1>Portfolio</h1>
+    <p>ธนวัฒน์ ใจวังเย็น | สมัครศึกษาต่อสาขาเทคโนโลยีสารสนเทศ</p>
+</header>
+
+<section id="profile">
+    <h2>ประวัติส่วนตัวและการศึกษา</h2>
+    <p><strong>ชื่อ:</strong> นาย ธนวัฒน์ ใจวังเย็น</p>
+    <p><strong>โรงเรียน:</strong> บุญวาทย์วิทยาลัย</p>
+    <p><strong>GPA:</strong> 3.41</p>
+    <p>
+        ข้าพเจ้ามีพื้นฐานทางวิชาการที่เอื้อต่อการเรียนด้านเทคโนโลยี
+        และมีความตั้งใจพัฒนาตนเองเพื่อศึกษาต่อในระดับอุดมศึกษา
+        โดยเฉพาะสาขาเทคโนโลยีสารสนเทศ
+    </p>
+</section>
+
+<section id="skills">
+    <h2>ทักษะและการเขียนโปรแกรม</h2>
+    <table>
+        <tr>
+            <th>ทักษะ</th>
+            <th>รายละเอียด</th>
+            <th>ระดับ</th>
+            <th>การใช้งาน</th>
+        </tr>
+        <tr>
+            <td>คอมพิวเตอร์พื้นฐาน</td>
+            <td>ระบบปฏิบัติการและซอฟต์แวร์</td>
+            <td>พื้นฐาน–ปานกลาง</td>
+            <td>งานเรียน / รายงาน</td>
+        </tr>
+        <tr>
+            <td>การเขียนโปรแกรม</td>
+            <td>ฝึกตรรกะและการแก้ปัญหา</td>
+            <td>พื้นฐาน</td>
+            <td>โปรเจกต์เล็ก</td>
+        </tr>
+        <tr>
+            <td>เครื่องมือดิจิทัล</td>
+            <td>แพลตฟอร์มเพื่อการเรียนรู้</td>
+            <td>ปานกลาง</td>
+            <td>งานกลุ่ม</td>
+        </tr>
+    </table>
+</section>
+
+<section id="projects">
+    <h2>โครงงานด้านไอที</h2>
+    <div class="card">
+        <p><strong>ผลงาน:</strong> โปรเจกต์ฝึกเขียนโปรแกรม</p>
+        <p><strong>บทบาท:</strong> วางแผน ออกแบบ และลงมือทำ</p>
+        <p>
+            ได้ฝึกการคิดเชิงวิเคราะห์และการแก้ไขปัญหา
+            ซึ่งสอดคล้องกับแนวทางการเรียนของมหาวิทยาลัย
+        </p>
+    </div>
+</section>
+
+<section id="training">
+    <h2>ประสบการณ์การฝึกอบรม</h2>
+    <div class="card">
+        <ul>
+            <li>เรียนรู้ด้วยตนเองจากแหล่งออนไลน์</li>
+            <li>ฝึกใช้ซอฟต์แวร์และเครื่องมือดิจิทัล</li>
+            <li>พัฒนาทักษะนอกห้องเรียนอย่างต่อเนื่อง</li>
+        </ul>
+    </div>
+</section>
+
+<section id="goal">
+    <h2>แรงบันดาลใจและเป้าหมาย</h2>
+    <p>
+        ข้าพเจ้าสนใจเทคโนโลยีสารสนเทศตั้งแต่ระดับมัธยมศึกษา
+        และเห็นว่าเทคโนโลยีมีบทบาทสำคัญต่อการพัฒนาสังคม
+    </p>
+    <p>
+        มีเป้าหมายศึกษาต่อและประกอบอาชีพด้านไอที
+        พร้อมพัฒนาตนเองให้ทันต่อเทคโนโลยีใหม่อย่างต่อเนื่อง
+    </p>
+</section>
+
+<footer>
+    © Portfolio | ธนวัฒน์ ใจวังเย็น
+</footer>
+
+</body>
+</html>
